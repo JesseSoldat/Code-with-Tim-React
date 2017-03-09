@@ -62,3 +62,12 @@ body {
 .btn.purple-btn:hover {
   background-color: #B573D0;
 }
+
+.btn.red-btn {
+  background-color: #e74c3c;
+  box-shadow: 0px 5px 0px 0px #c0392b;
+}
+
+.btn.red-btn:hover {
+  background-color: #F75E53;
+}
