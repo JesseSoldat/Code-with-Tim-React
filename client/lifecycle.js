@@ -11,7 +11,7 @@ var LifecycleComponent = React.createClass({
   // BEFORE COMPONENT IS RENDERED
   // HAPPENS WHEN OUR CLASS IS CREATED!!!
 	getDefaultProps() {
-		console.log('01--getDefaultProps');
+		// console.log('01--getDefaultProps');
 		return ({
 			firstName: 'Jesse',
 			lastName: 'Soldat',
@@ -22,7 +22,7 @@ var LifecycleComponent = React.createClass({
   // BEFORE COMPONENT IS RENDERED
   // The return value will be used as the initial value 
   getInitialState() {
-  	console.log('02--getInitialState');
+  	// console.log('02--getInitialState');
   	return ({
   		count: 0
   	});
@@ -30,12 +30,12 @@ var LifecycleComponent = React.createClass({
   // 3 called ONCE
   // BEFORE COMPONENT IS RENDERED
   componentWillMount() {
-  	console.log('03--componentWillMount');
+  	// console.log('03--componentWillMount');
   },
   // 4
   // Happend whenever our component changes
   render() {
-  	console.log('04--render()');
+  	// console.log('04--render()');
   	return (
 		<div>
   		<button className="btn grey-btn number" onClick={this.increment}>
@@ -51,7 +51,7 @@ var LifecycleComponent = React.createClass({
   // set timers using setTimeout or setInterval, or send AJAX requests,
   // perform those operations in this method.
   componentDidMount() {
-  	console.log('05--componentDidMount');
+  	// console.log('05--componentDidMount');
   	this.interval= setInterval(this.increment, 1000);
   },
   // 6 ONLY ONCE
@@ -60,7 +60,7 @@ var LifecycleComponent = React.createClass({
   //  such as invalidating timers or cleaning up any DOM
   // elements that were created in componentDidMount.
   componentWillUnmount() {
-  	console.log('06--componentWillUnmount');
+  	// console.log('06--componentWillUnmount');
  		clearInterval(this.interval); 	
   }
 
