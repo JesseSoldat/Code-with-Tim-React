@@ -71,3 +71,36 @@ body {
 .btn.red-btn:hover {
   background-color: #F75E53;
 }
+
+.btn.pink-btn {
+  background-color: #ff69b4;
+  box-shadow: 0px 5px 0px 0px #df13ed;
+}
+
+.btn.pink-btn:hover {
+  background-color: #ffb6c1;
+}
+
+.btn.grey-btn {
+  border: .3px solid grey;
+  padding: 10px;
+  width: 20%;
+  font-size: 15px;
+  outline: none;
+  border-radius: 3px;
+  font-weight: bold;
+  background-color: light-grey;
+}
+.btn.grey-btn.text {
+  border-bottom-left-radius: 0;
+  border-top-left-radius: 0;
+  border-left: none;
+}
+.btn.grey-btn.number {
+  width: 5%;
+  border-bottom-right-radius: 0;
+  border-top-right-radius: 0;
+  border-right: none;
+}
+
+

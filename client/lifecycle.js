@@ -38,10 +38,10 @@ var LifecycleComponent = React.createClass({
   	console.log('04--render()');
   	return (
 		<div>
-  		<button onClick={this.increment}>
+  		<button className="btn grey-btn number" onClick={this.increment}>
   			{this.state.count}
   		</button>
-  		<button onClick={this.stopInterval}>Stop Counter</button>
+  		<button className="btn grey-btn text" onClick={this.stopInterval}>Stop Counter</button>
   	</div>
   	)
   },
